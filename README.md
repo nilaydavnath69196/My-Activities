@@ -1,2 +1,2 @@
 # My-Activities
-This is my works and projects and others
+This is my works, projects and others
