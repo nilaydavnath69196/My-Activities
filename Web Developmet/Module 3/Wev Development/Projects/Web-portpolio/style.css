@@ -1,0 +1,88 @@
+body{
+    font-family: 'Roboto Condensed', sans-serif;
+    margin: 0;
+}
+h1{
+    font-size: 50px;
+}
+.orange-name{
+    color: rgba(242, 193, 14, 0.89);
+}
+.half-weidth{
+    width: 40%;
+    float: left;
+    margin-left: 5%;
+   padding-left: 2%;  
+}
+.half-weidth img{
+    width: 100%;
+    
+}
+#first-image{
+    margin-top: 30px;
+}
+.top{
+    background-image: url(./Images/top-banner.png);
+    background-repeat: no-repeat;
+
+}
+section{
+    height: 500px;
+}
+.tab{
+    text-decoration: none;
+    color: white;
+    padding: 10px 20px;
+    background-image: linear-gradient(45deg, lightsalmon, tomato);
+    /* background-color: orange; */
+    border-radius: 5px; 
+    font-weight: bold;
+
+}
+#gig{
+    margin-left: -20px;
+    width: 100%;
+    border-radius: 30px;
+}
+.dream-area{
+    margin-top: 50px;
+}
+.dream-area{
+    background-image: url(./Images/dream-bg.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+/* EI CSS O USE KORA JAI TOBE DIV SMALL HOATE BBACKGROUND IMAGE BITORE ATBE NA */
+/* #background{
+    background-image: url(./Images/dream-bg.png);
+    background-repeat: no-repeat;                   
+    background-position: right;
+} */        
+.single-ex{
+    box-shadow: 10px 10px 40px gray ;
+    border-radius: 5px;
+    height: 70%;
+    background-color: white;
+    
+}
+.Experience-area{
+    background-image: url(./Images/exp-bg.png);
+    background-repeat: no-repeat;
+    background-position: left;
+    
+}
+#full-satck{
+    border-left: 7px solid;
+    border-image: linear-gradient(180deg, lightsalmon, tomato);
+    border-image-slice: 1;
+}
+#baby-web{
+    border-left: 7px solid ;
+    border-image: linear-gradient(180deg, blue, rgb(9, 234, 211));
+    border-image-slice: 1;
+}
+footer p{
+    text-align: center;
+    font-family: Courier New, monospace;
+}

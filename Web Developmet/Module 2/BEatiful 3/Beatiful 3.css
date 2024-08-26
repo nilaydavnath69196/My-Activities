@@ -1,0 +1,30 @@
+
+
+.blog1{
+    border: 5px solid rgb(207, 25, 220);
+    border-radius: 20px;
+    margin:  5px;
+    width: 30%;
+    float: left;
+    padding: 8px;
+    text-align: center;
+    
+    
+
+    
+}
+.sent{
+    background-color: rgba(37, 212, 10, 0.769);
+}
+
+h3{
+   text-align: center; 
+}
+p{
+    text-align: justify;
+}
+.img1{
+    width: 200px;
+    margin: 5% 50% 5% 50%;
+    /* or code etao likha jai margin: 20px 50% 20px 50%;  */
+}
