@@ -1,3 +1,8 @@
+/*
+    NILAY DAV NATH
+    C++ - PRIME NUMBER
+    DATE: 30/08/2024
+    */
 #include<iostream>
 using namespace std;
 class number
