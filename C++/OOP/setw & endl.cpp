@@ -16,7 +16,7 @@ public:
 
 void word::display() {
     cout << setw(20) << "Hello" << endl;// it print 20 space before Hello
-    cout << setw(10) << "World!" << endl; //it print 10 space before Hello
+    cout << setw(10) << "World!" << endl; //it print 10 space before WORLD
 }
 
 int main() {
