@@ -165,15 +165,3 @@ Serial Number: 67890
 Country Name: Vietnam
 Importer Name: NetTech
 Company Name: TP-Link
-Code: 103
-Product: proccesor
-Regular Price: $120
-Offer Price: $100
-Warranty: 5 year
-Color: none
-Made in: China
-Serial Number: 2548361
-Country Name: china
-Importer Name: techbar
-Company Name: intel
-
