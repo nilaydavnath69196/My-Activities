@@ -1,3 +1,0 @@
-Product1, $500, 2 years, Color: Red, Size: Medium
-Product2, $1200, 1 year, Color: Black, Size: Large
-Product3, $300, 6 months, Color: White, Size: Small
