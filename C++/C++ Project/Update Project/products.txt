@@ -1,0 +1,167 @@
+Code: 100
+Product: CPU
+Regular Price: $250
+Offer Price: $220
+Warranty: 3 years
+Color: Silver
+Made in: USA
+Serial Number: 12345
+Country Name: USA
+Importer Name: TechImports Inc.
+Company Name: Intel
+
+Code: 101
+Product: Motherboard
+Regular Price: $150
+Offer Price: $120
+Warranty: 2 years
+Color: Black
+Made in: Taiwan
+Serial Number: 67890
+Country Name: Taiwan
+Importer Name: GlobalComponents Ltd.
+Company Name: ASUS
+
+Code: 102
+Product: Memory
+Regular Price: $80
+Offer Price: $70
+Warranty: 2 years
+Color: Blue
+Made in: Korea
+Serial Number: 34567
+Country Name: Korea
+Importer Name: RAMImport Inc.
+Company Name: Kingston
+
+Code: 103
+Product: SSD
+Regular Price: $90
+Offer Price: $75
+Warranty: 5 years
+Color: Black
+Made in: China
+Serial Number: 45678
+Country Name: China
+Importer Name: StoragePlus
+Company Name: Samsung
+
+Code: 104
+Product: RAM
+Regular Price: $60
+Offer Price: $50
+Warranty: 2 years
+Color: Green
+Made in: Japan
+Serial Number: 56789
+Country Name: Japan
+Importer Name: MemoryWorld
+Company Name: Corsair
+
+Code: 105
+Product: HDD
+Regular Price: $70
+Offer Price: $60
+Warranty: 3 years
+Color: Silver
+Made in: Malaysia
+Serial Number: 67890
+Country Name: Malaysia
+Importer Name: HardDrive Co.
+Company Name: Western Digital
+
+Code: 106
+Product: Power Supply
+Regular Price: $80
+Offer Price: $65
+Warranty: 3 years
+Color: Black
+Made in: China
+Serial Number: 78901
+Country Name: China
+Importer Name: PowerComponents
+Company Name: EVGA
+
+Code: 107
+Product: Monitor
+Regular Price: $200
+Offer Price: $180
+Warranty: 2 years
+Color: Black
+Made in: USA
+Serial Number: 89012
+Country Name: USA
+Importer Name: Display Imports
+Company Name: Dell
+
+Code: 108
+Product: Graphics Card
+Regular Price: $400
+Offer Price: $350
+Warranty: 3 years
+Color: Black
+Made in: Taiwan
+Serial Number: 90123
+Country Name: Taiwan
+Importer Name: GPUWorld
+Company Name: NVIDIA
+
+Code: 109
+Product: Mouse
+Regular Price: $20
+Offer Price: $15
+Warranty: 1 year
+Color: Black
+Made in: China
+Serial Number: 23456
+Country Name: China
+Importer Name: Input Devices Ltd.
+Company Name: Logitech
+
+Code: 110
+Product: Keyboard
+Regular Price: $30
+Offer Price: $25
+Warranty: 1 year
+Color: White
+Made in: China
+Serial Number: 34567
+Country Name: China
+Importer Name: Input Devices Ltd.
+Company Name: Logitech
+
+Code: 111
+Product: Printer
+Regular Price: $120
+Offer Price: $100
+Warranty: 2 years
+Color: White
+Made in: Japan
+Serial Number: 45678
+Country Name: Japan
+Importer Name: PrintHub
+Company Name: Canon
+
+Code: 112
+Product: Projector
+Regular Price: $300
+Offer Price: $250
+Warranty: 2 years
+Color: Black
+Made in: China
+Serial Number: 56789
+Country Name: China
+Importer Name: DisplayTech
+Company Name: Epson
+
+Code: 113
+Product: WiFi Router
+Regular Price: $60
+Offer Price: $50
+Warranty: 2 years
+Color: Black
+Made in: Vietnam
+Serial Number: 67890
+Country Name: Vietnam
+Importer Name: NetTech
+Company Name: TP-Link
