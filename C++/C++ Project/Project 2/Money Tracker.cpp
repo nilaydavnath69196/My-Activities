@@ -1,3 +1,9 @@
+/*
+NILAY DAV NATH
+TOPIC - PROJECT FOR MONEY TRACKER IN C++ (USING TEXT FILE)
+DATE - 09/11/2024
+DEPERTMENT OF COMPUTER SCIENCE AND ENGINEERING
+*/
 #include <iostream>
 #include <fstream>
 #include <string>
