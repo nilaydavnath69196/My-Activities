@@ -1,10 +1,9 @@
 /*
 NILAY DAV NATH
-TOPIC - PROJECT FOR PRODUCT INFORMATION IN C++ (CALLING TEXT FILE)
+TOPIC - PROJECT FOR PRODUCT INFORMATION IN C++ (USING TEXT FILE)
 DATE - 09/11/2024
 DEPERTMENT OF COMPUTER SCIENCE AND ENGINEERING
 */
-
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -18,7 +17,7 @@ public:
 void Product::displayProductInfo() {
     int productCode;
     char anotherProduct = 'y';
-cout << "-------Hello Sir! Wllcome to my project-----------" << endl;
+
     while (anotherProduct == 'y') {
         // Display product code list
         cout << "Here is the product code list: " << endl;
@@ -36,7 +35,8 @@ cout << "-------Hello Sir! Wllcome to my project-----------" << endl;
         cout << " 112 for Projector" << endl;
         cout << " 113 for WiFi Router" << endl;
 
-        cout << "Please Enter product code to display information: ";
+        // User input for product code
+        cout << "Now Enter product code to display information: ";
         cin >> productCode;
 
         ifstream file("products.txt");
@@ -67,8 +67,7 @@ cout << "-------Hello Sir! Wllcome to my project-----------" << endl;
         cout << "Press 'y' for yes and 'n' for no: ";
         cin >> anotherProduct;
     }
-
-    cout << "---------THANK YOU-----------" << endl;
+    cout << "THANK YOU!" << endl;
 }
 
 int main() {
@@ -77,3 +76,4 @@ int main() {
 
     return 0;
 }
+
