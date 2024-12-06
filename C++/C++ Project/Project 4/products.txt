@@ -1,0 +1,10 @@
+Laptop,80000.50,1500.00,High-performance laptop for work and gaming.
+Smartphone,50000.00,2000.00,Latest model with advanced features.
+Tablet,30000.00,1000.00,Portable tablet for on-the-go use.
+Headphones,5000.00,500.00,Noise-cancelling headphones.
+Smartwatch,4000.00,600.00,Stylish smartwatch with health tracking.
+Keyboard,3000.00,400.00,Mechanical keyboard for gamers.
+Mouse,2000.00,300.00,Wireless mouse with ergonomic design.
+Monitor,25000.00,3000.00,4K Ultra HD monitor.
+Printer,50000.00,1800.00,All-in-one printer for home use.
+Router,4500.00,800.00,High-speed WiFi router for seamless connectivity.
