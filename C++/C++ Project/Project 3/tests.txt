@@ -1,0 +1,10 @@
+X-Ray,1000,101,Used for imaging bones and chest.
+Ultrasound,1500,102,Used to monitor internal organs and pregnancy.
+ECG,700,103,Checks the electrical activity of the heart.
+Blood Test,500,104,Analyzes blood for various conditions.
+CT Scan,4000,105,Provides detailed cross-sectional images.
+MRI,5000,106,Uses magnetic fields to image soft tissues.
+Liver Function Test,1200,107,Tests the functionality of the liver.
+Kidney Function Test,1300,108,Tests the health of the kidneys.
+Diabetes Test,900,109,Checks blood sugar levels.
+Thyroid Test,800,110,Assesses thyroid gland performance.
