@@ -1,6 +1,6 @@
 /*
 NILAY DAV NATH
-TOPIC - PROJECT FOR PRODUCT INFORMATION IN C++ (CALLING TEXT FILE)
+TOPIC - PROJECT FOR PRODUCT INFORMATION IN C++ (USING TEXT FILE)
 DATE - 09/11/2024
 DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
 */
@@ -8,27 +8,42 @@ DEPARTMENT OF COMPUTER SCIENCE AND ENGINEERING
 #include <iostream>
 #include <fstream>
 #include <string>
+#include <iomanip>
 using namespace std;
 
 class Product {
 public:
-    void displayProductInfo(); // Display existing product information
-    void addProduct();         // Add a new product to the file
+    void displayProductInfo();
+    void addProductInfo();
 };
 
 void Product::displayProductInfo() {
     int productCode;
     char anotherProduct = 'y';
-    cout << "Hello Sir! Welcome to my project." << endl;
+
+
+    cout << "=== Product Information ===" << endl;
+    cout << "" << endl;
 
     while (anotherProduct == 'y') {
-        // Display product code list
-        cout << "\nHere is the product code list: " << endl;
-        cout << " 100 for CPU\n 101 for Motherboard\n 102 for Memory\n 103 for SSD\n 104 for RAM\n";
-        cout << " 105 for HDD\n 107 for Monitor\n 108 for Graphics Card\n 109 for Mouse\n";
-        cout << " 110 for Keyboard\n 111 for Printer\n 112 for Projector\n 113 for WiFi Router\n";
+        // Display the list of product codes
+        cout << "Here is the product code list: " << endl;
+        cout << " 100 for CPU" << endl;
+        cout << " 101 for Motherboard" << endl;
+        cout << " 102 for Memory" << endl;
+        cout << " 103 for SSD" << endl;
+        cout << " 104 for RAM" << endl;
+        cout << " 105 for HDD" << endl;
+        cout << " 107 for Monitor" << endl;
+        cout << " 108 for Graphics Card" << endl;
+        cout << " 109 for Mouse" << endl;
+        cout << " 110 for Keyboard" << endl;
+        cout << " 111 for Printer" << endl;
+        cout << " 112 for Projector" << endl;
+        cout << " 113 for WiFi Router" << endl;
 
-        cout << "Please enter the product code to display information: ";
+        // User input for product code
+        cout << "Please Sir, enter product code to display information: ";
         cin >> productCode;
 
         ifstream file("products.txt");
@@ -39,7 +54,8 @@ void Product::displayProductInfo() {
             while (getline(file, line)) {
                 if (line == "Code: " + to_string(productCode)) {
                     productFound = true;
-                    cout << "\nProduct Found:\n" << line << endl;
+                    cout << "\n--- Product Details ---" << endl;
+                    cout << line << endl;
                     while (getline(file, line) && !line.empty()) {
                         cout << line << endl;
                     }
@@ -55,45 +71,46 @@ void Product::displayProductInfo() {
             cerr << "Unable to open file!" << endl;
         }
 
-        cout << "\nDo you want to see another product's information? ";
-        cout << "Press 'y' for yes and 'n' for no: ";
+        cout << "\nDo you want to see other products' information? (y/n): ";
         cin >> anotherProduct;
     }
     cout << "THANK YOU!" << endl;
+       cout << "----------------------------------------" << endl;
 }
 
-void Product::addProduct() {
-    ofstream file("products.txt", ios::app); // Open file in append mode
-    if (!file) {
-        cerr << "Error: Could not open the file!" << endl;
+void Product::addProductInfo() {
+    ofstream file("products.txt", ios::app);
+    if (!file.is_open()) {
+        cerr << "Unable to open file!" << endl;
         return;
     }
 
-    int code;
-    string name, description;
-    double price;
+    char anotherProduct = 'y';
+    while (anotherProduct == 'y') {
+        int productCode;
+        string productName, productDetails;
 
-    cout << "\nEnter product details to add:\n";
-    cout << "Product Code: ";
-    cin >> code;
-    cin.ignore(); // To ignore the newline character after code input
-    cout << "Product Name: ";
-    getline(cin, name);
-    cout << "Price: $";
-    cin >> price;
-    cin.ignore();
-    cout << "Description: ";
-    getline(cin, description);
+        cout << "\n--- Add New Product ---" << endl;
+        cout << "Enter product code: ";
+        cin >> productCode;
+        cin.ignore(); // Ignore newline character left in the buffer
+        cout << "Enter product name: ";
+        getline(cin, productName);
+        cout << "Enter product details: ";
+        getline(cin, productDetails);
 
-    // Append the new product information to the file
-    file << "Code: " << code << endl;
-    file << "Name: " << name << endl;
-    file << "Price: $" << price << endl;
-    file << "Description: " << description << endl;
-    file << endl;
+        // Write to the file
+        file << "Code: " << productCode << endl;
+        file << "Name: " << productName << endl;
+        file << "Details: " << productDetails << endl;
+        file << endl;
+
+        cout << "\nDo you want to add another product? (y/n): ";
+        cin >> anotherProduct;
+    }
 
     file.close();
-    cout << "Product added successfully!\n";
+    cout << "Product information added successfully!" << endl;
 }
 
 int main() {
@@ -101,11 +118,15 @@ int main() {
     int choice;
 
     do {
-        cout << "\n--- PRODUCT INFORMATION SYSTEM ---\n";
-        cout << "1. Display Product Information\n";
-        cout << "2. Add New Product\n";
-        cout << "3. Exit\n";
-        cout << "Enter your choice: ";
+        cout <<"<<<<------------------------------>>>" << endl;
+        cout << "=== Hello Sir! Welcome To My Project ===" << endl;
+        cout << "=== PRODUCT INFORMATION SYSTEM ===" << endl;
+        cout << "1. Display Product Information" << endl;
+        cout << "2. Add New Product Information" << endl;
+        cout << "3. Exit" << endl;
+            cout <<"------------------------------" << endl;
+
+        cout << "Please Enter your choice: ";
         cin >> choice;
 
         switch (choice) {
@@ -113,16 +134,15 @@ int main() {
                 obj.displayProductInfo();
                 break;
             case 2:
-                obj.addProduct();
+                obj.addProductInfo();
                 break;
             case 3:
                 cout << "Exiting... Thank you!" << endl;
                 break;
             default:
-                cout << "Invalid choice. Please try again.\n";
+                cout << "Invalid choice. Please try again." << endl;
         }
     } while (choice != 3);
 
     return 0;
 }
-
