@@ -28,19 +28,19 @@ void Product::displayProductInfo() {
     while (anotherProduct == 'y') {
         // Display the list of product codes
         cout << "Here is the product code list: " << endl;
-        cout << " 100 for CPU" << endl;
-        cout << " 101 for Motherboard" << endl;
-        cout << " 102 for Memory" << endl;
-        cout << " 103 for SSD" << endl;
-        cout << " 104 for RAM" << endl;
-        cout << " 105 for HDD" << endl;
-        cout << " 107 for Monitor" << endl;
-        cout << " 108 for Graphics Card" << endl;
-        cout << " 109 for Mouse" << endl;
-        cout << " 110 for Keyboard" << endl;
-        cout << " 111 for Printer" << endl;
-        cout << " 112 for Projector" << endl;
-        cout << " 113 for WiFi Router" << endl;
+        cout << "- 100 for CPU" << endl;
+        cout << "- 101 for Motherboard" << endl;
+        cout << "- 102 for Memory" << endl;
+        cout << "- 103 for SSD" << endl;
+        cout << "- 104 for RAM" << endl;
+        cout << "- 105 for HDD" << endl;
+        cout << "- 107 for Monitor" << endl;
+        cout << "- 108 for Graphics Card" << endl;
+        cout << "- 109 for Mouse" << endl;
+        cout << "- 110 for Keyboard" << endl;
+        cout << "- 111 for Printer" << endl;
+        cout << "- 112 for Projector" << endl;
+        cout << "- 113 for WiFi Router" << endl;
 
         // User input for product code
         cout << "Please Sir, enter product code to display information: ";
