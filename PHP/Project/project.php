@@ -1,3 +1,11 @@
+ <!--
+ NILAY DAV NATH
+DEPERTMENT OF COMPUTER SCIENCE AND ENGINEERING
+PROJECT TOPIC - TEMPERATURE CONVERTER USINF PHP
+DATE: 14/11/2025
+ -->
+   
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -5,80 +13,58 @@
 
     <style>
         body{
-            font-family: Arial, sans-serif;
-            background: #f0f4ff;
-            margin: 0;
-            padding: 0;
+            font-family: Arial;
+            background:#f0f4ff;
+            margin:0;
+            padding:0;
         }
-
-        .container{
-            width: 450px;
-            background: white;
-            margin: 60px auto;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0 0 15px rgba(0,0,0,0.2);
+        .box{
+            width:420px;
+            background:white;
+            margin:60px auto;
+            padding:25px;
+            border-radius:12px;
+            box-shadow:0 0 12px rgba(0,0,0,0.2);
         }
-
-        h2{
-            text-align: center;
-            margin-bottom: 20px;
-            color: #333;
+        h2{text-align:center;margin-bottom:20px;color:#333}
+        label{font-weight:bold}
+        input,select{
+            width:100%;
+            padding:10px;
+            margin:10px 0 18px 0;
+            border:1px solid #bbb;
+            border-radius:6px;
+            font-size:15px;
         }
-
-        label{
-            font-size: 16px;
-            font-weight: bold;
-        }
-
-        input, select{
-            width: 100%;
-            padding: 10px;
-            margin-top: 8px;
-            margin-bottom: 18px;
-            border: 1px solid #bbb;
-            border-radius: 6px;
-            font-size: 15px;
-        }
-
         button{
-            width: 100%;
-            padding: 12px;
-            background: #4A69BD;
-            color: white;
-            border: none;
-            border-radius: 6px;
-            font-size: 16px;
-            cursor: pointer;
+            width:100%;
+            padding:12px;
+            background:#4A69BD;
+            color:white;
+            border:none;
+            border-radius:6px;
+            font-size:16px;
+            cursor:pointer;
         }
-
-        button:hover{
-            background: #3b55a0;
-        }
-
-        .result-box{
-            margin-top: 25px;
-            padding: 15px;
-            background: #e8f0ff;
-            border-left: 5px solid #4A69BD;
-            border-radius: 6px;
-        }
-
-        .result-box h3{
-            margin: 0;
+        .result{
+            margin-top:20px;
+            padding:15px;
+            background:#e8f0ff;
+            border-left:5px solid #4A69BD;
+            border-radius:6px;
         }
     </style>
 </head>
 <body>
 
-<div class="container">
+<div class="box">
     <h2>Temperature Converter</h2>
 
     <form method="post">
-        <label>Enter Temperature Value:</label>
-        <input type="text" name="value" placeholder="Example: 25" required>
+        <label>Enter Value:</label>
+        <input type="text" name="value" required>
 
-        <label>Select Conversion Type:</label>
+        <label>Choose Conversion:</label>
         <select name="type">
             <option value="c2f">Celsius → Fahrenheit</option>
             <option value="f2c">Fahrenheit → Celsius</option>
@@ -92,46 +78,21 @@
     </form>
 
     <?php
-    if ($_SERVER["REQUEST_METHOD"] == "POST") {
+    if($_SERVER["REQUEST_METHOD"]=="POST"){
+        $v=$_POST["value"];
+        $t=$_POST["type"];
 
-        $value = $_POST["value"];
-        $type = $_POST["type"];
-        $result = "";
+        if($t=="c2f") $r=($v*9/5)+32;
+        if($t=="f2c") $r=($v-32)*5/9;
+        if($t=="c2k") $r=$v+273.15;
+        if($t=="k2c") $r=$v-273.15;
+        if($t=="f2k") $r=($v-32)*5/9+273.15;
+        if($t=="k2f") $r=($v-273.15)*9/5+32;
 
-        if ($type == "c2f") {
-            $result = ($value * 9/5) + 32;
-            $text = "$value °C = $result °F";
-        }
-
-        else if ($type == "f2c") {
-            $result = ($value - 32) * 5/9;
-            $text = "$value °F = $result °C";
-        }
-
-        else if ($type == "c2k") {
-            $result = $value + 273.15;
-            $text = "$value °C = $result K";
-        }
-
-        else if ($type == "k2c") {
-            $result = $value - 273.15;
-            $text = "$value K = $result °C";
-        }
-
-        else if ($type == "f2k") {
-            $result = ($value - 32) * 5/9 + 273.15;
-            $text = "$value °F = $result K";
-        }
-
-        else if ($type == "k2f") {
-            $result = ($value - 273.15) * 9/5 + 32;
-            $text = "$value K = $result °F";
-        }
-
-        echo "<div class='result-box'><h3>Result: $text</h3></div>";
+        $units=["c2f"=>"°F","f2c"=>"°C","c2k"=>"K","k2c"=>"°C","f2k"=>"K","k2f"=>"°F"];
+        echo "<div class='result'><b>Result:</b> $v → $r ".$units[$t]."</div>";
     }
     ?>
-
 </div>
 
 </body>
