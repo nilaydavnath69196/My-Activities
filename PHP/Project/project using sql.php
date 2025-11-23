@@ -119,8 +119,6 @@ if(!$conn){
         if($t=="k2f") $r=($v-273.15)*9/5+32;
 
         $units=["c2f"=>"°F","f2c"=>"°C","c2k"=>"K","k2c"=>"°C","f2k"=>"K","k2f"=>"°F"];
-
-        // Insert WITHOUT ID
         $query = "INSERT INTO temperature(finder_name, input_value, conversion_type, result_value, date_time)
                   VALUES('$name','$v','$t','$r', NOW())";
 
@@ -136,3 +134,4 @@ if(!$conn){
 
 </body>
 </html>
+
