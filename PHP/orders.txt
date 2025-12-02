@@ -1,0 +1,8 @@
+Order ID: ORD692b18e669f56
+Date: 2025-11-29 17:01:42
+Food: Pasta ($7), Sandwich ($4)
+Total: $11
+Name: nnn
+Address: Harualchari, Fatikchhari, Chattogram.
+Phone: 01840092108
+---------------------------
