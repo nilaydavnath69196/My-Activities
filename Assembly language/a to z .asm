@@ -1,0 +1,23 @@
+
+.MODEL SMALL
+.STACK 100H
+.CODE
+
+MAIN PROC
+
+    MOV DL,'A'
+
+PRINT:
+
+    MOV AH,02H
+    INT 21H
+
+    INC DL
+    CMP DL,'Z'
+    JLE PRINT
+
+    MOV AH,4CH
+    INT 21H
+
+MAIN ENDP
+END MAIN

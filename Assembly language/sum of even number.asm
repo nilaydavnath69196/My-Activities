@@ -1,0 +1,31 @@
+SUM = 110
+.MODEL SMALL
+.STACK 100H
+
+.DATA
+MSG DB 'SUM = 110$'
+
+.CODE
+MAIN PROC
+
+    MOV AX,@DATA
+    MOV DS,AX
+
+    MOV AX,0
+    MOV BX,2
+
+AGAIN:
+    ADD AX,BX
+    ADD BX,2
+    CMP BX,20
+    JLE AGAIN
+
+    LEA DX,MSG
+    MOV AH,09H
+    INT 21H
+
+    MOV AH,4CH
+    INT 21H
+
+MAIN ENDP
+END MAIN
